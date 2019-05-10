@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('WriteFile') {
             steps {
-                cmd 'python --version'
+                sh 'python --version'
             }
         }
     }
