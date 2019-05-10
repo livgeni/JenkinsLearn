@@ -8,7 +8,7 @@ pipeline {
         }
         stage('ReadFile') {
             steps {
-                bat 'type c:\temp\HelloJenkins.txt'
+                bat 'type c:\\temp\\HelloJenkins.txt'
             }
         }
     }
