@@ -3,7 +3,12 @@ pipeline {
     stages {
         stage('WriteFile') {
             steps {
-                bat 'python --version'
+                bat 'python HelloJenkins.py'
+            }
+        }
+        stage('ReadFile') {
+            steps {
+                bat 'type c:\temp\HelloJenkins.txt'
             }
         }
     }
